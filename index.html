@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rait - Din lokale ekspert på IT-tjenester og snekkertjenester i Drammen, Mjøndalen, Hokksund, Asker. Vi tilbyr nettverksoppsett, WiFi-løsninger, kabling og allsidige snekkertjenester.">
+    <meta name="keywords" content="IT-tjenester, nettverk, WiFi, kabling, snekker, montering, Drammen, Mjøndalen, Hokksund, Asker, håndverker">
+    <title>Rait | IT og Snekkertjenester | Drammen, Mjøndalen, Hokksund, Asker</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #1f2937;
+            --light-bg: #f3f4f6;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .hero-text {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            background-color: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .service-list li {
+            margin: 0.75rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+
+        .cta-section {
+            background-color: var(--light-bg);
+            padding: 4rem 1rem;
+            text-align: center;
+            margin: 3rem 0;
+            border-radius: 12px;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: block;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #f8f9fa;
+        }
+
+        .contact-card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .contact-card p {
+            margin-bottom: 0;
+        }
+
+        footer {
+            background: var(--secondary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .service-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero-text">
+            <h1>Rait</h1>
+            <p>Din tekniske totalleverandør av IT- og snekkertjenester</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#tjenester">Tjenester</a>
+            <a href="#om-oss">Om oss</a>
+            <a href="#kontakt">Kontakt</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section id="tjenester">
+                <div class="services">
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>IT & Nettverkstjenester</h3>
+                        <p>Profesjonelle IT-løsninger for bedrifter og private</p>
+                        <ul class="service-list">
+                            <li>Gjenoppretting av filer</li>
+                            <li>Oppsett og optimalisering av nettverk</li>
+                            <li>Strukturert kabling og infrastruktur</li>
+                            <li>WiFi-løsninger og dekning</li>
+                            <li>Nettverkssikkerhet</li>
+                            <li>Feilsøking og vedlikehold</li>
+                            <li>Teknisk rådgivning</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔨</div>
+                        <h3>Snekkertjenester</h3>
+                        <p>Kvalitetsarbeid med fokus på detaljer</p>
+                        <ul class="service-list">
+                            <li>Montering av møbler og innredning</li>
+                            <li>Mindre byggeprosjekter</li>
+                            <li>Reparasjoner og vedlikehold</li>
+                            <li>Tilpasning og skreddersydde løsninger</li>
+                            <li>Riving og renovering</li>
+                            <li>Terrasser og uteplasser</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="om-oss" class="cta-section">
+                <h2>Hvorfor velge Rait?</h2>
+                <p>Vi kombinerer teknisk ekspertise med praktisk håndverk for å gi deg de beste løsningene. Med bred kompetanse innen både IT og snekring, kan vi ta hånd om både dine digitale og fysiske prosjekter.</p>
+                <p>Vårt mål er å levere kvalitet, pålitelighet og profesjonalitet i alt vi gjør.</p>
+            </section>
+
+            <section id="kontakt">
+                <h2>Ta kontakt</h2>
+                <p>Vi er klare til å hjelpe deg med ditt neste prosjekt</p>
+                <div class="contact-info">
+                    <a href="mailto:ok+rait@rait.no" class="contact-card">
+                        <h3>Send e-post</h3>
+                        <p>ok@rait.no</p>
+                    </a>
+                    <div class="contact-card">
+                        <h3>Område</h3>
+                        <p>Drammen, Mjøndalen, Hokksund, Asker</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rait. Alle rettigheter reservert.</p>
+    </footer>
+</body>
+</html>
